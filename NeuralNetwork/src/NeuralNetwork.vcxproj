@@ -76,23 +76,15 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>obj\$(PlatformTarget)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>obj\$(PlatformTarget)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>obj\$(PlatformTarget)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>obj\$(PlatformTarget)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -110,8 +102,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,8 +119,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,8 +141,6 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -176,57 +162,55 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\ActivationFunction.h" />
-    <ClInclude Include="src\Connection.h" />
-    <ClInclude Include="lib\nlohmann\fifo_map.hpp" />
-    <ClInclude Include="src\GaussianFunction.h" />
-    <ClInclude Include="src\IdentityFunction.h" />
-    <ClInclude Include="lib\nlohmann\json.hpp" />
-    <ClInclude Include="src\Layer.h" />
-    <ClInclude Include="src\LayerAlias.h" />
-    <ClInclude Include="src\LinearFunction.h" />
-    <ClInclude Include="src\NetState.h" />
-    <ClInclude Include="src\NeuralNet.h" />
-    <ClInclude Include="src\Neuron.h" />
-    <ClInclude Include="lib\nlohmann\ordered_json.hpp" />
-    <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\RampFunction.h" />
-    <ClInclude Include="src\RandomNumberGenerator.h" />
-    <ClInclude Include="src\ReLUFunction.h" />
-    <ClInclude Include="src\SigmoidFunction.h" />
-    <ClInclude Include="src\TanhFunction.h" />
-    <ClInclude Include="src\TrainingData.h" />
-    <ClInclude Include="src\Utils.h" />
+    <ClInclude Include="ActivationFunction.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="nlohmann\fifo_map.hpp" />
+    <ClInclude Include="GaussianFunction.h" />
+    <ClInclude Include="IdentityFunction.h" />
+    <ClInclude Include="nlohmann\json.hpp" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="LayerAlias.h" />
+    <ClInclude Include="LinearFunction.h" />
+    <ClInclude Include="NetState.h" />
+    <ClInclude Include="NeuralNet.h" />
+    <ClInclude Include="Neuron.h" />
+    <ClInclude Include="nlohmann\ordered_json.hpp" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RampFunction.h" />
+    <ClInclude Include="RandomNumberGenerator.h" />
+    <ClInclude Include="ReLUFunction.h" />
+    <ClInclude Include="SigmoidFunction.h" />
+    <ClInclude Include="TanhFunction.h" />
+    <ClInclude Include="TrainingData.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ActivationFunction.cpp" />
-    <ClCompile Include="src\Connection.cpp" />
-    <ClCompile Include="src\GaussianFunction.cpp" />
-    <ClCompile Include="src\IdentityFunction.cpp" />
-    <ClCompile Include="src\Layer.cpp" />
-    <ClCompile Include="src\LinearFunction.cpp" />
-    <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\NetState.cpp" />
-    <ClCompile Include="src\NeuralNet.cpp" />
-    <ClCompile Include="src\Neuron.cpp" />
-    <ClCompile Include="src\pch.cpp">
+    <ClCompile Include="ActivationFunction.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="GaussianFunction.cpp" />
+    <ClCompile Include="IdentityFunction.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="LinearFunction.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="NetState.cpp" />
+    <ClCompile Include="NeuralNet.cpp" />
+    <ClCompile Include="Neuron.cpp" />
+    <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\RampFunction.cpp" />
-    <ClCompile Include="src\RandomNumberGenerator.cpp" />
-    <ClCompile Include="src\ReLUFunction.cpp" />
-    <ClCompile Include="src\SigmoidFunction.cpp" />
-    <ClCompile Include="src\TanhFunction.cpp" />
-    <ClCompile Include="src\TrainingData.cpp" />
-    <ClCompile Include="src\Utils.cpp" />
+    <ClCompile Include="RampFunction.cpp" />
+    <ClCompile Include="RandomNumberGenerator.cpp" />
+    <ClCompile Include="ReLUFunction.cpp" />
+    <ClCompile Include="SigmoidFunction.cpp" />
+    <ClCompile Include="TanhFunction.cpp" />
+    <ClCompile Include="TrainingData.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,123 +15,123 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\ActivationFunction.h">
+    <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Connection.h">
+    <ClInclude Include="nlohmann\fifo_map.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\GaussianFunction.h">
+    <ClInclude Include="nlohmann\json.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\IdentityFunction.h">
+    <ClInclude Include="nlohmann\ordered_json.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Layer.h">
+    <ClInclude Include="ActivationFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\LayerAlias.h">
+    <ClInclude Include="Connection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\LinearFunction.h">
+    <ClInclude Include="GaussianFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\NetState.h">
+    <ClInclude Include="IdentityFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\NeuralNet.h">
+    <ClInclude Include="Layer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Neuron.h">
+    <ClInclude Include="LayerAlias.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\RampFunction.h">
+    <ClInclude Include="LinearFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\RandomNumberGenerator.h">
+    <ClInclude Include="NetState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\ReLUFunction.h">
+    <ClInclude Include="NeuralNet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\SigmoidFunction.h">
+    <ClInclude Include="Neuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\TanhFunction.h">
+    <ClInclude Include="RampFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\TrainingData.h">
+    <ClInclude Include="RandomNumberGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils.h">
+    <ClInclude Include="ReLUFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lib\nlohmann\fifo_map.hpp">
+    <ClInclude Include="SigmoidFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lib\nlohmann\ordered_json.hpp">
+    <ClInclude Include="TanhFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lib\nlohmann\json.hpp">
+    <ClInclude Include="TrainingData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\pch.h">
+    <ClInclude Include="Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ActivationFunction.cpp">
+    <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Connection.cpp">
+    <ClCompile Include="ActivationFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\GaussianFunction.cpp">
+    <ClCompile Include="Connection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\IdentityFunction.cpp">
+    <ClCompile Include="GaussianFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Layer.cpp">
+    <ClCompile Include="IdentityFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\LinearFunction.cpp">
+    <ClCompile Include="LinearFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\NetState.cpp">
+    <ClCompile Include="NetState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\NeuralNet.cpp">
+    <ClCompile Include="NeuralNet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Neuron.cpp">
+    <ClCompile Include="Neuron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RampFunction.cpp">
+    <ClCompile Include="RampFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RandomNumberGenerator.cpp">
+    <ClCompile Include="RandomNumberGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ReLUFunction.cpp">
+    <ClCompile Include="ReLUFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\SigmoidFunction.cpp">
+    <ClCompile Include="SigmoidFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\TanhFunction.cpp">
+    <ClCompile Include="TanhFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\TrainingData.cpp">
+    <ClCompile Include="TrainingData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils.cpp">
+    <ClCompile Include="Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\pch.cpp">
+    <ClCompile Include="Layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

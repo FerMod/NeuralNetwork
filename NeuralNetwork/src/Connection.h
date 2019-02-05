@@ -1,5 +1,5 @@
 #pragma once
-#include "../lib/nlohmann/json.hpp"
+#include <nlohmann/json.hpp>
 
 namespace NeuralNetwork {
 

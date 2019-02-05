@@ -1,8 +1,8 @@
 #pragma once
 #include <vector>
 #include <memory>
+#include <nlohmann/json.hpp>
 #include "ActivationFunction.h"
-#include "../lib/nlohmann/json.hpp"
 #include "LayerAlias.h"
 
 namespace NeuralNetwork {

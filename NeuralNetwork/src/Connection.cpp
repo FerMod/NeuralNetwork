@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Connection.h"
-#include "../lib/nlohmann/ordered_json.hpp"
+#include <nlohmann/ordered_json.hpp>
 
 using namespace NeuralNetwork;
 using json = nlohmann::json;

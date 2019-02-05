@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Neuron.h"
-#include "../lib/nlohmann/ordered_json.hpp"
+#include <nlohmann/ordered_json.hpp>
 
 using namespace NeuralNetwork;
 using json = nlohmann::json;
@@ -9,9 +9,8 @@ using ordered_json = nlohmann::ordered_json;
 Neuron::Neuron() {
 }
 
-Neuron::Neuron(unsigned numOutputs, unsigned index) {
+Neuron::Neuron(unsigned numOutputs, unsigned index): index(index) {
 
-	this->index = index;
 	createConnections(numOutputs);
 
 }
@@ -80,7 +79,7 @@ void Neuron::updateInputWeights(double learningRate, double momentum, Layer &pre
 
 	// Update the weights of the neurons connections in the previous layer
 	for(size_t neuronNum = 0; neuronNum < prevLayer.size(); neuronNum++) {
-		
+
 		Neuron &neuron = prevLayer[neuronNum];
 		Connection &connection = neuron.outputConnections[index];
 

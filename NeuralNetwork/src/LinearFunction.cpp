@@ -3,15 +3,19 @@
 
 using namespace NeuralNetwork;
 
+/// <summary>
+/// Finds the foo.
+/// </summary>
+/// <param name="value"></param>
 LinearFunction::LinearFunction(double value): value(value) {
 }
 
 double LinearFunction::calculate(double x) {
-	return 0.0;
+	return x;
 }
 
 double LinearFunction::derivative(double x) {
-	return 0.0;
+	return value;
 }
 
 FunctionType LinearFunction::getFunctionType() {

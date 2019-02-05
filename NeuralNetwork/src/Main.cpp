@@ -68,7 +68,9 @@ int main() {
 	trainingData.getTopology(topology, "topology:");
 	net = NeuralNet(topology);
 
-	std::vector<double> inputVals, targetVals, resultVals;
+	std::vector<double> inputVals;
+	std::vector<double> targetVals;
+	std::vector<double> resultVals;
 	int trainingPass = 0;
 	size_t numInputVals = 0;
 

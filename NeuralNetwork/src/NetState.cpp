@@ -1,11 +1,11 @@
 #include "pch.h"
-#include "NetState.h"
 #include <iostream>
 #include <ostream>
 #include <iomanip> 
 #include <fstream>
+#include <nlohmann/ordered_json.hpp>
+#include "NetState.h"
 #include "Neuron.h"
-#include "../lib/nlohmann/ordered_json.hpp"
 
 using namespace NeuralNetwork;
 using json = nlohmann::json;
@@ -38,9 +38,6 @@ void NetState::saveNetworkState(const NeuralNet &net, const std::string &filenam
 */
 
 void NetState::saveNetworkState(const NeuralNet &net, const std::string &filename) {
-
-	double learningRate = 0.0;
-	double momentum = 0.0;
 
 	ordered_json layerState;
 	std::vector<Layer> layers = net.getLayers();

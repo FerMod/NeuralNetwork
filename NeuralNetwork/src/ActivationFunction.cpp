@@ -26,7 +26,6 @@ std::unique_ptr<ActivationFunction> ActivationFunction::createActivationFunction
 			return std::make_unique<IdentityFunction>(value);
 		case ReLU:
 			return std::make_unique<ReLUFunction>(value);
-		case None:
 		default:
 			return std::unique_ptr<ActivationFunction>();
 	}

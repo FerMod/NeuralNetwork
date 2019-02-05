@@ -25,13 +25,12 @@ TrainingData::TrainingData(const std::string filename, const std::string directo
 
 	this->trainingFilePath = filepath;
 	switch(trainingType) {
-	case Mult9:
-		training = std::bind(&TrainingData::mult9Training, this, _1);
-		break;
-	case XOR:
-	default:
-		training = std::bind(&TrainingData::xorTraining, this, _1);
-		break;
+		case Mult9:
+			training = std::bind(&TrainingData::mult9Training, this, _1);
+			break;
+		case XOR:
+			training = std::bind(&TrainingData::xorTraining, this, _1);
+			break;
 	}
 
 }
